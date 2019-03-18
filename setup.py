@@ -36,10 +36,9 @@ setup(
 
     platforms=['Any'],
 
-    scripts=[],
-
     provides=[],
     install_requires=['cliff', 'pathlib'],
+    scripts=['install_r_packages.sh'],
 
     namespace_packages=[],
     packages=find_packages(),
@@ -53,6 +52,7 @@ setup(
             'makeshiny = shinycli.commands:Makeshiny',
             'makealgo = shinycli.commands:MakeAlgo',
             'checkapp = shinycli.commands:SanityCheck',
+            'runapp = shinycli.commands:RunShiny',
         ],
     },
 

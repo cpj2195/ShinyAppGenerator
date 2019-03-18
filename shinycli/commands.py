@@ -4,6 +4,7 @@ from cliff.command import Command
 from create_app import CreateShinyApp
 from create_algo import CreateShinyAlgo
 from sanity_checker import run_checker
+from runshiny_app import RunShinyApp
 
 
 class Makeshiny(Command):
@@ -39,4 +40,12 @@ class SanityCheck(Command):
 
     def take_action(self, parsed_args):
         run_checker()
+        
+
+class RunShiny(Command):
+    """Command which runs the Shiny Appp"""
+
+    def take_action(self, parsed_args):
+        app_obj = RunShinyApp()
+        app_obj.run_shiny_app()
         
