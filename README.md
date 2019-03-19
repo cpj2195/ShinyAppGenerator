@@ -7,16 +7,17 @@ if you are following the correct folder structure among other checks put in plac
 
 ## Prerequisites
 
-1. You should have Python2.7 installed on your system
+1. You should have Python3.6 installed on your system
 2. You should have R 3.5.1 installed
 3. Make sure you have virtualenv pip package
+4. Install R packages using the `install_packages.sh` using the command `sudo sh install_packages.sh lintr shiny`
 
 
 ## Ceate a virtual environment and activate it.
 
   $ pip install virtualenv 
 
-  $ virtualenv .venv 
+  $ virtualenv -p python3.6 .venv 
 
   $ source .venv/bin/activate 
 

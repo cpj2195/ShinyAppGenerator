@@ -3,7 +3,7 @@ import glob
 import json
 import os
 
-import constants as cnst
+import shinycli.constants as cnst
 
 
 def recursive_search(directory_path):

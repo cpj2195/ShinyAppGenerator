@@ -14,12 +14,12 @@ try:
 except IOError:
     long_description = ''
 
-class CustomInstallCommand(install):
-    """Custom install setup to help run shell commands (outside shell) before installation"""
-    def run(self):
-        print(os.getcwd())
-        os.system("sudo sh install_packages.sh lintr shiny")
-        install.do_egg_install(self)
+# class CustomInstallCommand(install):
+#     """Custom install setup to help run shell commands (outside shell) before installation"""
+#     def run(self):
+#         print(os.getcwd())
+#         os.system("sudo sh install_packages.sh lintr shiny")
+#         install.do_egg_install(self)
 
 
 setup(
@@ -47,9 +47,8 @@ setup(
     platforms=['Any'],
 
     provides=[],
-    cmdclass={'install': CustomInstallCommand} ,
+    # cmdclass={'install': CustomInstallCommand} ,
     install_requires=['cliff', 'pathlib'],
-    # scripts=['install_r_packages.sh'],
     
 
     namespace_packages=[],

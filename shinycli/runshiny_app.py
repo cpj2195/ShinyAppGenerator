@@ -3,11 +3,11 @@
 import os
 from pathlib import Path
 
-import constants as cnst
+import shinycli.constants as cnst
 import subprocess
 
-import helpers as hlp
-from logging_utils import logger
+import shinycli.helpers as hlp
+from shinycli.logging_utils import logger
 
 
 class RunShinyApp:

@@ -6,10 +6,10 @@ import pathlib
 import re
 from pathlib import Path
 
-import constants as cnst
-import helpers as hlp
-from logging_utils import logger
-from tree import DisplayablePath
+import shinycli.constants as cnst
+import shinycli.helpers as hlp
+from shinycli.logging_utils import logger
+from shinycli.tree import DisplayablePath
 
 
 class SanityChecker:

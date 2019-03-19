@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 from cliff.command import Command
-from create_app import CreateShinyApp
-from create_algo import CreateShinyAlgo
-from sanity_checker import run_checker
-from runshiny_app import RunShinyApp
+from .create_app import CreateShinyApp
+from .create_algo import CreateShinyAlgo
+from .sanity_checker import run_checker
+from .runshiny_app import RunShinyApp
 
 
 class Makeshiny(Command):

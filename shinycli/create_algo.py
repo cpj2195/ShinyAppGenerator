@@ -3,9 +3,9 @@
 import os
 from pathlib import Path
 
-import constants as cnst
-import helpers as hlp
-from logging_utils import logger
+import shinycli.constants as cnst
+import shinycli.helpers as hlp
+from shinycli.logging_utils import logger
 
 
 class CreateShinyAlgo:
