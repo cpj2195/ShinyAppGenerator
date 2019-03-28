@@ -53,7 +53,8 @@ if you are following the correct folder structure among other checks put in plac
 
 (.venv)$ shiny runlintr {R_file_path}
 
-  Runs the R lintr on the specified R files to see if you are following standard R linting .
+  Runs the R lintr on the specified R files to see if you are following standard R linting .Here, Camel Case functions are allowed and
+  default line length can be 120 charcters instaed of 89.
 
 
 (.venv)$ shiny --help
