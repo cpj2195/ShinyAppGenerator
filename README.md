@@ -23,7 +23,10 @@ if you are following the correct folder structure among other checks put in plac
 
 ## Now, install the demo application into the virtual environment.
 
-  (.venv)$ pip install shinycli 
+  (.venv)$ Clone the Repo 
+  (.venv)$ Change the directory and run `python setup.py install`
+
+
 
 
 # Usage
@@ -42,6 +45,20 @@ if you are following the correct folder structure among other checks put in plac
 
   Runs a sanity checker to see if the structure is followed among other things.Will work only if you are anywhere
   shiny app directory.
+
+(.venv)$ shiny runapp 
+
+  Runs the shiny app locally on the default URL for the user to test.Will work only if you are anywhere
+  shiny app directory.
+
+(.venv)$ shiny runlintr {R_file_path}
+
+  Runs the R lintr on the specified R files to see if you are following standard R linting .
+
+
+(.venv)$ shiny --help
+  To see the list of available shinycli commands and their basic usage 
+
 
 
 # Cleaning Up
