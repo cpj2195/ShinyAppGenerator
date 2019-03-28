@@ -1,1 +1,1 @@
-name = "shinycli"
+# name = "shinycli"

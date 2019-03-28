@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import logging
 logger = logging.getLogger('Shiny-Logger')
 # create the console handler

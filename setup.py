@@ -6,21 +6,12 @@ PROJECT = 'shinycli'
 VERSION = '0.1'
 
 from setuptools import setup, find_packages
-from setuptools.command.install import install
 import os
 
 try:
     long_description = open('README.rst', 'rt').read()
 except IOError:
     long_description = ''
-
-# class CustomInstallCommand(install):
-#     """Custom install setup to help run shell commands (outside shell) before installation"""
-#     def run(self):
-#         print(os.getcwd())
-#         os.system("sudo sh install_packages.sh lintr shiny")
-#         install.do_egg_install(self)
-
 
 setup(
     name=PROJECT,
@@ -64,6 +55,7 @@ setup(
             'makealgo = shinycli.commands:MakeAlgo',
             'checkapp = shinycli.commands:SanityCheck',
             'runapp = shinycli.commands:RunShiny',
+            'runlintr = shinycli.commands:RunLint'
         ],
     },
 

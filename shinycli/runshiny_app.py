@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
 import os
+import subprocess
 from pathlib import Path
 
 import shinycli.constants as cnst
-import subprocess
-
 import shinycli.helpers as hlp
 from shinycli.logging_utils import logger
 
@@ -30,6 +29,15 @@ class RunShinyApp:
         library(shiny)
         runApp("{}")
 
-        EOF'''.format(str(self.shiny_app_dir))
+        EOF'''.format(self.shiny_app_dir).encode()
+        print(commands)
+        logger.warn("in function -----")
+
         process = subprocess.Popen('/bin/bash', stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        logger.warn("after function -----")
+
         out, err = process.communicate(commands)
+        print(out.decode())
+        # print(err)
+        # logger.warn("out")
+
